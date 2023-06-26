@@ -3,7 +3,7 @@ console.log("finished \"nan\"");
 const { hello } = require('./build/Release/hello.node');
 console.log("finished \"hello\"");
 
-const cPlusPlusHelloTime = "c++ hello"
+const cPlusPlusHelloTime = "c++ hello:"
 console.time(cPlusPlusHelloTime);
 hello();
 console.timeEnd(cPlusPlusHelloTime);

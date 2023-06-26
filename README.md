@@ -1,8 +1,8 @@
 # fast-js
 Example of how to start writing c++ modules for node
 
-1. make sure your have node 9.8.0 installed
-2. `$ npm install`
+1. make sure your have node modules installed
+2. `$ npm rebuild`
 3. run the project with `$ npm start`
 
 ## What does it do?
