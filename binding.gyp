@@ -1,8 +1,8 @@
 {
   "targets": [
     {
-      "target_name": "hello",
-      "sources": [ "src/hello.cc" ],
+      "target_name": "addon",
+      "sources": [ "src/addon.cc" ],
       "include_dirs": ["<!(node -e \"require('nan')\")"]
     }
   ]

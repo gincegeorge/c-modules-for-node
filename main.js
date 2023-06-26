@@ -1,20 +1,14 @@
 require('nan')
-console.log("finished \"nan\"");
-const { hello } = require('./build/Release/hello.node');
-console.log("finished \"hello\"");
 
-const cPlusPlusHelloTime = "c++ hello:"
-console.time(cPlusPlusHelloTime);
-hello();
-console.timeEnd(cPlusPlusHelloTime);
+const { addon } = require('./build/Release/addon.node');
 
-const jsLoopTime = "js loop";
-console.time(jsLoopTime);
-let count = 0;
-for (let i = 0; i < 1000000; i++) {
-    count = i;
-}
-console.log("hello\n");
-console.timeEnd(jsLoopTime);
+addon();
 
-console.log("\"hello\" function called");
+
+// const addon = require('./build/Release/addon.node');
+// const input = 'x';
+// console.log(addon);
+// const hash = addon.simpleHash(input);
+
+// console.log(`Input: ${input}`);
+// console.log(`Hash: ${hash}`);
